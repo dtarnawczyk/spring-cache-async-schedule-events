@@ -1,0 +1,41 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.5.3.RELEASE'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+springBoot {
+//    mainClass = "org.spring.caching.task1.Application"
+//    mainClass = "org.spring.caching.task2.Application"
+//    mainClass = "org.spring.caching.task3.Application"
+//    mainClass = "org.spring.async.task1.Application"
+//    mainClass = "org.spring.async.task2.Application"
+//    mainClass = "org.spring.async.task3.Application"
+    mainClass = "org.spring.async.task4.Application"
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter"
+    compile "org.springframework.boot:spring-boot-starter-cache"
+    testCompile "org.springframework.boot:spring-boot-starter-test"
+}
+
+tasks.withType(Test) {
+    testLogging {
+        exceptionFormat = 'full'
+        events 'passed', 'skipped', 'failed'
+    }
+}
