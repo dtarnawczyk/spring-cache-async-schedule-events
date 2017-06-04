@@ -36,3 +36,7 @@ Uruchom aplikację – obserwuj wyniki
 
 ### Async Task 4
 Wykonaj zadanie 3. korzystając bezpośrednio z interfejsów TaskScheduler i Trigger. 
+
+### Events Task 1
+Klasa DataSynchronizer po zakończeniu synchronizacji wywołuje inne komponenty. Zmień implementacje w ten sposób aby zamiast wywoływać inne komponenty wysyłać zdarzenie, które zostanie obsłużone przez te komponenty. Zadbaj o to aby wyświetlany czas był wszędzie taki sam
+Uruchom aplikację – obserwuj wyniki

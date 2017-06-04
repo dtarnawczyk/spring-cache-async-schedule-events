@@ -24,7 +24,9 @@ springBoot {
 //    mainClass = "org.spring.async.task1.Application"
 //    mainClass = "org.spring.async.task2.Application"
 //    mainClass = "org.spring.async.task3.Application"
-    mainClass = "org.spring.async.task4.Application"
+//    mainClass = "org.spring.async.task4.Application"
+//    mainClass = "org.spring.events.task1.Application"
+    mainClass = "org.spring.events.task2.Application"
 }
 
 dependencies {
